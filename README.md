@@ -24,7 +24,7 @@ We release two models, which are based on LiDAR-only and multi-modal data respec
 
 |                                             |Modality|GPU memory of training| Easy | Mod. | Hard  | download | 
 |---------------------------------------------|----------:|----------:|:-------:|:-------:|:-------:|:---------:|
-| [TED-S](tools/cfgs/models/kitti/TED-S.yaml)|LiDAR only|~12 GB |93.24| 87.96| 86.27| [model-36M](https://drive.google.com/file/d/1hqoj-lV4Cr3m7U3EphdCSjHmhBlekRm8/view?usp=sharing) | 
+| [TED-S](tools/cfgs/models/kitti/TED-S.yaml)|LiDAR only|~12 GB |93.25 |87.99| 86.28| [model-36M](https://drive.google.com/file/d/1hqoj-lV4Cr3m7U3EphdCSjHmhBlekRm8/view?usp=sharing) | 
 | [TED-M](tools/cfgs/models/kitti/TED-M.yaml)|LiDAR+RGB |~15 GB| 95.62 |89.24 |86.77 | [model-65M](https://drive.google.com/file/d/1hXe1at-LKogTfWorALmq6djjYqhKX7nD/view?usp=sharing) |
 
 ## Getting Started
