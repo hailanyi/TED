@@ -13,7 +13,6 @@ TeBEV pooling aligns and aggregates the scene-level equivariant features into li
  
 ![](./tools/images/framework.png)
 
-
 ## Model Zoo
 We release two models, which are based on LiDAR-only and multi-modal data respectively. We denoted the two models as TED-S and TED-M respectively.
 
@@ -22,7 +21,6 @@ We release two models, which are based on LiDAR-only and multi-modal data respec
 * The models are trained with train split (3712 samples) of KITTI dataset
 
 * The results are the 3D AP(R40) of Car on the *val* set of KITTI dataset.
-
 
 |                                             |Modality|GPU memory of training| Easy | Mod. | Hard  | download | 
 |---------------------------------------------|----------:|----------:|:-------:|:-------:|:-------:|:---------:|
