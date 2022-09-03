@@ -1,6 +1,6 @@
 # TED
 This is a improved version of [TED](https://arxiv.org/) (Learning Transformation-Equivariant Features for 3D Object Detection) by a multiple refinement design. 
-This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), some codes are from 
+This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), some codes are from [CasA](https://github.com/hailanyi/CasA), 
 [PENet](https://github.com/JUGGHM/PENet_ICRA2021) and [SFD](https://github.com/LittlePey/SFD).
 
 ## Detection Framework
