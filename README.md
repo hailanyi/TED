@@ -120,7 +120,7 @@ This code is released under the [Apache 2.0 license](LICENSE).
 ## Citation
     @article{TED,
         title={Learning Transformation-Equivariant Features for 3D Object Detection},
-        author={Hai, Wu and Chenglu, Wen and Wei, Li and Ruigang, Yang and Cheng, Wang},
+        author={Wu, Hai and Wen, Chenglu and Li, Wei and Yang, Ruigang and Wang, Cheng},
         year={2022}
     }
 
