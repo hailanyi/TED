@@ -42,7 +42,7 @@ We also tested on.
 + Ubuntu 18.04
 + Python 3.6.9 
 + PyTorch 1.8.1
-+ Spconv 2.1.21
++ Spconv 2.1.22 # pip install spconv-cu111
 + NVIDIA CUDA 11.1
 + 2x 3090 GPUs
 
