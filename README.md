@@ -112,6 +112,9 @@ sh dist_test.sh
 This code is released under the [Apache 2.0 license](LICENSE).
 
 ## Acknowledgement
+
+[CasA](https://github.com/hailanyi/CasA)
+
 [OpenPCDet](https://github.com/open-mmlab/OpenPCDet)
 
 [PENet](https://github.com/JUGGHM/PENet_ICRA2021)
