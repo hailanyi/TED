@@ -1,7 +1,7 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=hailanyi/TED)
-# Transformation-Equivariant 3D Object Detection for Autonomous Driving
-This is a improved version of [TED](https://arxiv.org/) by a multiple refinement design. 
-This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), some codes are from [CasA](https://github.com/hailanyi/CasA), 
+# TED2
+This is a improved version of [TED](https://arxiv.org/) (Transformation-Equivariant 3D Object Detection for Autonomous Driving) by a multiple refinement design. 
+This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) and [CasA](https://github.com/hailanyi/CasA), some codes are from 
 [PENet](https://github.com/JUGGHM/PENet_ICRA2021) and [SFD](https://github.com/LittlePey/SFD).
 
 ## Detection Framework
@@ -122,10 +122,12 @@ This code is released under the [Apache 2.0 license](LICENSE).
 [SFD](https://github.com/LittlePey/SFD)
 
 ## Citation
-    @article{TED,
+    @inproceedings{TED,
         title={Transformation-Equivariant 3D Object Detection for Autonomous Driving},
         author={Wu, Hai and Wen, Chenglu and Li, Wei and Yang, Ruigang and Wang, Cheng},
-        year={2022}
+        year={2023},
+        booktitle={AAAI}
+        
     }
 
 
