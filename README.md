@@ -89,21 +89,21 @@ TED
 ### Setup
 
 ```
-cd TED
+cd TED2
 python setup.py develop
 ```
 
 ### Training.
 
 ```
-cd TED/tools
+cd TED2/tools
 sh dist_train.sh
 ```
 
 ### Evaluation.
 
 ```
-cd TED/tools
+cd TED2/tools
 sh dist_test.sh
 ```
 
