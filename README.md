@@ -66,7 +66,7 @@ python3 -m pcdet.datasets.kitti.kitti_dataset_mm create_kitti_infos tools/cfgs/d
 
 Anyway, the data structure should be: 
 ```
-TED
+TED2
 ├── data
 │   ├── kitti
 │   │   │── ImageSets
