@@ -1,6 +1,6 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=hailanyi/TED)
 # TED2
-This is a improved version of [TED](https://arxiv.org/) (Transformation-Equivariant 3D Object Detection for Autonomous Driving) by a multiple refinement design. 
+This is a improved version of [TED](https://arxiv.org/abs/2211.11962) (Transformation-Equivariant 3D Object Detection for Autonomous Driving) by a multiple refinement design. 
 This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) and [CasA](https://github.com/hailanyi/CasA), some codes are from 
 [PENet](https://github.com/JUGGHM/PENet_ICRA2021) and [SFD](https://github.com/LittlePey/SFD).
 
@@ -60,7 +60,7 @@ cd tools/PENet
 python3 main.py --detpath [your path like: ../../data/kitti/training]
 ```
 
-* After that, run following command to creat dataset infos:
+After 'velodyne_depth' generation, run following command to creat dataset infos:
 ```
 python3 -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
 python3 -m pcdet.datasets.kitti.kitti_dataset_mm create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
@@ -91,23 +91,54 @@ TED2
 ### Setup
 
 ```
+git clone https://github.com/hailanyi/TED2.git
 cd TED2
 python setup.py develop
 ```
 
 ### Training.
 
+Single GPU train:
 ```
-cd TED2/tools
+cd tools
+python3 train.py --cfg_file ${CONFIG_FILE}
+```
+For example, if you train the TED-S model:
+```
+cd tools
+python3 train.py --cfg_file cfgs/models/kitti/TED-S.yaml
+```
+
+Multiple GPU train: 
+
+You can modify the gpu number in the dist_train.sh and run
+```
+cd tools
 sh dist_train.sh
 ```
+The log infos are saved into log.txt
+You can run ```cat log.txt``` to view the training process.
 
 ### Evaluation.
 
 ```
-cd TED2/tools
-sh dist_test.sh
+cd tools
+python3 test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKPT}
 ```
+
+For example, if you test the TED-S model:
+
+```
+cd tools
+python3 test.py --cfg_file cfgs/models/kitti/TED-S.yaml --ckpt TED-S.pth
+```
+
+Multiple GPU test: you need modify the gpu number in the dist_test.sh and run
+```
+sh dist_test.sh 
+```
+The log infos are saved into log-test.txt
+You can run ```cat log-test.txt``` to view the test results.
 
 ## License
 
