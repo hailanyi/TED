@@ -97,7 +97,7 @@ cd TED
 python3 setup.py develop
 ```
 
-### Training.
+### Training
 
 Single GPU train:
 ```
@@ -120,7 +120,7 @@ sh dist_train.sh
 The log infos are saved into log.txt
 You can run ```cat log.txt``` to view the training process.
 
-### Evaluation.
+### Evaluation
 
 ```
 cd tools
