@@ -1,6 +1,6 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=hailanyi/TED)
-# TED2
-This is a improved version of [TED](https://arxiv.org/abs/2211.11962) (Transformation-Equivariant 3D Object Detection for Autonomous Driving) by a multiple refinement design. 
+# Transformation-Equivariant 3D Object Detection for Autonomous Driving
+This is a improved version of [TED](https://arxiv.org/abs/2211.11962) by a multiple refinement design. 
 This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) and [CasA](https://github.com/hailanyi/CasA), some codes are from 
 [PENet](https://github.com/JUGGHM/PENet_ICRA2021) and [SFD](https://github.com/LittlePey/SFD).
 
@@ -52,7 +52,7 @@ We also tested on.
 
 You need creat a 'velodyne_depth' dataset to run our multimodal detector:
 You can download our preprocessed data [here (13GB)](https://drive.google.com/file/d/1xki9v_zsQMM8vMVNo0ENi1Mh_GNMjHUg/view?usp=sharing), or generate the data by yourself:
-
+* [Install this project](#installation).
 * Download the PENet depth completion model [here (500M)](https://drive.google.com/file/d/1RDdKlKJcas-G5OA49x8OoqcUDiYYZgeM/view?usp=sharing) and put it into ```tools/PENet```.
 * Then run the following code to generate RGB pseudo points.
 ```
@@ -62,13 +62,14 @@ python3 main.py --detpath [your path like: ../../data/kitti/training]
 
 After 'velodyne_depth' generation, run following command to creat dataset infos:
 ```
+cd ../..
 python3 -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
 python3 -m pcdet.datasets.kitti.kitti_dataset_mm create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
 ```
 
 Anyway, the data structure should be: 
 ```
-TED2
+TED
 ├── data
 │   ├── kitti
 │   │   │── ImageSets
@@ -88,12 +89,12 @@ TED2
 ├── tools
 ```
 
-### Setup
+### Installation
 
 ```
-git clone https://github.com/hailanyi/TED2.git
-cd TED2
-python setup.py develop
+git clone https://github.com/hailanyi/TED.git
+cd TED
+python3 setup.py develop
 ```
 
 ### Training.
