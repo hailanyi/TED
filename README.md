@@ -51,7 +51,7 @@ We also tested on.
 ### Prepare dataset
 
 You need creat a 'velodyne_depth' dataset to run our multimodal detector:
-You can download our preprocessed data [here (13GB)](https://drive.google.com/file/d/1xki9v_zsQMM8vMVNo0ENi1Mh_GNMjHUg/view?usp=sharing), or generate the data by yourself:
+You can download our preprocessed data from [google (13GB)](https://drive.google.com/file/d/1xki9v_zsQMM8vMVNo0ENi1Mh_GNMjHUg/view?usp=sharing), [baidu|a20o](https://pan.baidu.com/s/1OH4KIVoSSH7ea3-3CqkZRQ), or generate the data by yourself:
 * [Install this project](#installation).
 * Download the PENet depth completion model [here (500M)](https://drive.google.com/file/d/1RDdKlKJcas-G5OA49x8OoqcUDiYYZgeM/view?usp=sharing) and put it into ```tools/PENet```.
 * Then run the following code to generate RGB pseudo points.
