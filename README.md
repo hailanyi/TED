@@ -50,6 +50,21 @@ We also tested on.
 
 ### Prepare dataset
 
+Please download the official [KITTI 3D object detection](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) dataset and organize the downloaded files as follows (the road planes could be downloaded from [[road plane]](https://drive.google.com/file/d/1d5mq0RXRnvHPVeKx6Q612z0YRO1t2wAp/view?usp=sharing), which are optional for data augmentation in the training):
+
+```
+CasA
+├── data
+│   ├── kitti
+│   │   │── ImageSets
+│   │   │── training
+│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes)
+│   │   │── testing
+│   │   │   ├──calib & velodyne & image_2
+├── pcdet
+├── tools
+```
+
 You need creat a 'velodyne_depth' dataset to run our multimodal detector:
 You can download our preprocessed data from [google (13GB)](https://drive.google.com/file/d/1xki9v_zsQMM8vMVNo0ENi1Mh_GNMjHUg/view?usp=sharing), [baidu (a20o)](https://pan.baidu.com/s/1OH4KIVoSSH7ea3-3CqkZRQ), or generate the data by yourself:
 * [Install this project](#installation).
