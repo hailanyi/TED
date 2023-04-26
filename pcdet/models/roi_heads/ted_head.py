@@ -506,11 +506,11 @@ class TEDSHead(RoIHeadTemplate):
             batch_dict, nms_config=self.model_cfg.NMS_CONFIG['TRAIN' if self.training else 'TEST']
         )
 
-        scores, boxes = self.multi_grid_pool_aggregation(batch_dict, targets_dict)
+        boxes, scores = self.multi_grid_pool_aggregation(batch_dict, targets_dict)
 
         if not self.training:
-            batch_dict['batch_box_preds'] = scores
-            batch_dict['batch_cls_preds'] = boxes
+            batch_dict['batch_box_preds'] = boxes
+            batch_dict['batch_cls_preds'] = scores
 
         return batch_dict
     
