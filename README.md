@@ -1,4 +1,4 @@
-![visitors](https://visitor-badge.glitch.me/badge?page_id=hailanyi/TED)
+
 # Transformation-Equivariant 3D Object Detection for Autonomous Driving
 This is a improved version of [TED](https://arxiv.org/abs/2211.11962) by a multiple refinement design. 
 This code is mainly based on [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) and [CasA](https://github.com/hailanyi/CasA), some codes are from 
