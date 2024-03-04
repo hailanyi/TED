@@ -31,6 +31,14 @@ We release two models, which are based on LiDAR-only and multi-modal data respec
 | [TED-M](tools/cfgs/models/kitti/TED-M.yaml)|LiDAR+RGB |~15 GB| 95.62 |89.24 |86.77 | [google](https://drive.google.com/file/d/1hXe1at-LKogTfWorALmq6djjYqhKX7nD/view?usp=sharing) / [baidu(nkr5)](https://pan.baidu.com/s/1FP80452dfM09YtE8DBaicQ) / 65M|
 
 ## Getting Started
+
+```
+conda create -n spconv2 python=3.9
+conda activate spconv2
+pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+pip install numpy==1.19.5 protobuf==3.19.4 scikit-image==0.19.2 waymo-open-dataset-tf-2-2-0 nuscenes-devkit==1.0.5 spconv-cu111 numba scipy pyyaml easydict fire tqdm shapely matplotlib opencv-python addict pyquaternion awscli open3d pandas future pybind11 tensorboardX tensorboard Cython
+```
+
 ### Dependency
 Our released implementation is tested on.
 + Ubuntu 18.04
